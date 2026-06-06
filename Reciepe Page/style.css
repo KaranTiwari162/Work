@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(238, 216, 226);
+    display: flex;
+
+}
+
+.card {
+    background-color: white;
+    margin: auto;
+    padding: 24px;
+    border-radius: 24px;
+    height: auto;
+    max-width: 500px;
+
+}
+
+.image {
+    padding: 4px;
+}
+
+.image img {
+    border-radius: 24px;
+    width: 24vw;
+    height: 20vh;
+}
+
+.content {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.line {
+    color: hsl(24, 5%, 18%);
+    font-size: 15px;
+    margin: 14px;
+}
+
+.line1 {
+    color: purple;
+    margin: 26px;
+    padding: 16px;
+    background-color: rgb(249, 243, 249);
+    font-weight: bold;
+
+}
+
+.line1 li {
+    color: black;
+    font-weight: normal;
+}
+
+.line1 li::marker {
+    color: hsl(332, 51%, 32%)
+}
+
+.line2 {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    font-size: 35px;
+    margin: 16px;
+    font-weight: bold;
+
+}
+
+.line2 li {
+    font-weight: normal;
+    color: black;
+    font-size: 16px;
+    margin: 8px;
+}
+
+.line2 ol ::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.line3 {
+    color: rgb(8, 0, 0);
+    font-size: 15px;
+    margin: 14px;
+}
+
+table {
+    width: 24vw;
+    border-collapse: collapse;
+    margin: 2px;
+}
+
+td {
+    color: rgb(35, 34, 34);
+    padding: 15px;
+}
+
+tr {
+    border-bottom: 1px solid rgb(139, 135, 135);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
