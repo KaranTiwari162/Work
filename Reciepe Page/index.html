@@ -4,81 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recipe Collection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="card">
-        <div class="image">
-            <img src="image-omelette.jpeg" alt="">
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="recipe1">Omelette</button>
+            <button class="tab-btn" data-tab="recipe2">Pasta</button>
+            <button class="tab-btn" data-tab="recipe3">Salad</button>
         </div>
-        <div class="content">
-            Simple Omelette Recipe
-        </div>
-        <div class="line">
-            An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to
-            perfection, optionally filled with your choice of cheese, vegetables, or meats.</div>
-        <div class="line1">
-            Preparation time
-            <ul>
-                <li><b> Total:</b> Approximately 10 minutes</li>
-                <li> <b>Preparation: </b> 5 minutes</li>
-                <li> <b>Cooking:</b> 5 minutes</li>
-            </ul>
-        </div>
-        <div class="line2">
-            Ingredients
-            <ul>
-                <li>2-3 large eggs</li>
-                <li>Salt, to taste </li>
-                <li>Pepper, to taste</li>
-                <li>1 tablespoon of butter or oil</li>
-                <li> Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-            </ul>
-
-        </div>
-        <hr color="gray" size="1px">
-        <div class="line2">
-            Instruction
-            <ol>
-                <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well
-                    mixed. You can add a tablespoon of water or milk for a fluffier texture. </li>
-                <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil. </li>
-                <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to
-                    ensure the eggs evenly coat the surface.</li>
-                <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny
-                    in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
-                <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over
-                    the fillings. Let it cook for another minute, then slide it onto a plate.</li>
-                <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
-            </ol>
-        </div>
-        <hr color="gray" size="1px">
-        <div class="line2">
-            Nutrition</div>
-        <div class="line3">The table below shows nutritional values per serving without the additional fillings.</div>
-        <table>
-            <tr>
-                <td> Calories </td>
-                <td style="color:  hsl(14, 45%, 36%); font-weight: bold;">277kcal </td>
-            </tr>
-            <tr>
-                <td> Carbs</td>
-                <td style="color:  hsl(14, 45%, 36%);font-weight: bold;">0g </td>
-            </tr>
-            <tr>
-                <td> Protein </td>
-                <td style="color:  hsl(14, 45%, 36%);font-weight: bold;">20g </td>
-            </tr>
-            <tr>
-                <td> Fat</td>
-                <td style="color: hsl(14, 45%, 36%);font-weight: bold;">22g </td>
-            </tr>
-
-        </table>
-
     </div>
+
+    <!-- Recipe 1: Omelette -->
+    <div class="recipe-content active" id="recipe1">
+        <div class="card">
+            <div class="image">
+                <img src="image-omelette.jpeg" alt="Omelette">
+            </div>
+            <div class="content">
+                Simple Omelette Recipe
+            </div>
+            <div class="line">
+                An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to
+                perfection, optionally filled with your choice of cheese, vegetables, or meats.</div>
+            <div class="line1">
+                Preparation time
+                <ul>
+                    <li><b> Total:</b> Approximately 10 minutes</li>
+                    <li> <b>Preparation: </b> 5 minutes</li>
+                    <li> <b>Cooking:</b> 5 minutes</li>
+                </ul>
+            </div>
+            <div class="line2">
+                Ingredients
+                <ul>
+                    <li>2-3 large eggs</li>
+                    <li>Salt, to taste </li>
+                    <li>Pepper, to taste</li>
+                    <li>1 tablespoon of butter or oil</li>
+                    <li> Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+                </ul>
+
+            </div>
+            <hr color="gray" size="1px">
+            <div class="line2">
+                Instruction
+                <ol>
+                    <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well
+                        mixed. You can add a tablespoon of water or milk for a fluffier texture. </li>
+                    <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil. </li>
+                    <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to
+                        ensure the eggs evenly coat the surface.</li>
+                    <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny
+                        in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+                    <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over
+                        the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+                    <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+                </ol>
+            </div>
+            <hr color="gray" size="1px">
+            <div class="line2">
+                Nutrition</div>
+            <div class="line3">The table below shows nutritional values per serving without the additional fillings.</div>
+            <table>
+                <tr>
+                    <td> Calories </td>
+                    <td style="color:  hsl(14, 45%, 36%); font-weight: bold;">277kcal </td>
+                </tr>
+                <tr>
+                    <td> Carbs</td>
+                    <td style="color:  hsl(14, 45%, 36%);font-weight: bold;">0g </td>
+                </tr>
+                <tr>
+                    <td> Protein </td>
+                    <td style="color:  hsl(14, 45%, 36%);font-weight: bold;">20g </td>
+                </tr>
+                <tr>
+                    <td> Fat</td>
+                    <td style="color: hsl(14, 45%, 36%);font-weight: bold;">22g </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+    <!-- Recipe 2: Pasta -->
+    <div class="recipe-content" id="recipe2">
+        <div class="card">
+            <div class="content">
+                Classic Pasta Carbonara
+            </div>
+            <div class="line">
+                A traditional Italian pasta dish made with eggs, cheese, pancetta, and black pepper. Creamy, delicious, and ready in just 20 minutes.
+            </div>
+            <div class="line1">
+                Preparation time
+                <ul>
+                    <li><b> Total:</b> Approximately 20 minutes</li>
+                    <li> <b>Preparation: </b> 10 minutes</li>
+                    <li> <b>Cooking:</b> 10 minutes</li>
+                </ul>
+            </div>
+            <div class="line2">
+                Ingredients
+                <ul>
+                    <li>400g spaghetti or pasta of choice</li>
+                    <li>200g pancetta or guanciale, diced</li>
+                    <li>4 large eggs</li>
+                    <li>100g Pecorino Romano cheese, grated</li>
+                    <li>Black pepper, to taste</li>
+                    <li>Salt, to taste</li>
+                </ul>
+            </div>
+            <hr color="gray" size="1px">
+            <div class="line2">
+                Instruction
+                <ol>
+                    <li><b>Cook the pasta:</b> Bring a large pot of salted water to boil. Add pasta and cook until al dente.</li>
+                    <li><b>Fry the pancetta:</b> In a large skillet, fry diced pancetta over medium heat until crispy.</li>
+                    <li><b>Mix the eggs:</b> In a bowl, whisk together eggs, grated cheese, and black pepper.</li>
+                    <li><b>Combine:</b> Remove pasta from heat and reserve 1 cup of pasta water. Drain pasta and add to pancetta.</li>
+                    <li><b>Create the sauce:</b> Pour egg mixture over hot pasta, stirring constantly. Add pasta water gradually for creaminess.</li>
+                    <li><b>Serve:</b> Top with extra cheese and pepper. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recipe 3: Salad -->
+    <div class="recipe-content" id="recipe3">
+        <div class="card">
+            <div class="content">
+                Fresh Garden Salad
+            </div>
+            <div class="line">
+                A refreshing and healthy salad loaded with fresh vegetables, crispy greens, and a tangy vinaigrette. Perfect for any meal.
+            </div>
+            <div class="line1">
+                Preparation time
+                <ul>
+                    <li><b> Total:</b> Approximately 15 minutes</li>
+                    <li> <b>Preparation: </b> 15 minutes</li>
+                    <li> <b>Cooking:</b> 0 minutes</li>
+                </ul>
+            </div>
+            <div class="line2">
+                Ingredients
+                <ul>
+                    <li>200g mixed salad greens</li>
+                    <li>2 medium tomatoes, diced</li>
+                    <li>1 cucumber, sliced</li>
+                    <li>1 red bell pepper, diced</li>
+                    <li>100g feta cheese, crumbled</li>
+                    <li>3 tablespoons olive oil</li>
+                    <li>1 tablespoon balsamic vinegar</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </div>
+            <hr color="gray" size="1px">
+            <div class="line2">
+                Instruction
+                <ol>
+                    <li><b>Prepare vegetables:</b> Wash and cut all vegetables into bite-sized pieces.</li>
+                    <li><b>Combine greens:</b> Place mixed greens in a large bowl.</li>
+                    <li><b>Add vegetables:</b> Top greens with tomatoes, cucumber, and bell pepper.</li>
+                    <li><b>Make dressing:</b> In a small bowl, whisk olive oil and balsamic vinegar together.</li>
+                    <li><b>Assemble:</b> Pour dressing over salad and toss gently.</li>
+                    <li><b>Serve:</b> Top with crumbled feta cheese and black pepper. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const recipeContents = document.querySelectorAll('.recipe-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                recipeContents.forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
