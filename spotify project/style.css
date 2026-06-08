@@ -53,6 +53,7 @@
     gap: 8px;
     position: absolute;
     bottom: 0;
+    padding: 10px 0px;
 
 }
 .footer a{
@@ -62,7 +63,115 @@
 .header{
     display: flex;
     justify-content: space-between;
+    background-color: rgb(34 34 34);
 }
 .header > *{
     padding: 20px;
+   
+}
+.spotifyPlaylists{
+padding: 16px;
+}
+.cardcontainer {
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 60vh; 
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+    transition: all .9s;
+}
+
+.card:hover{
+    background-color: rgb(105, 103, 103);
+    cursor: pointer;
+    --a: 1;
+}
+
+/* .card>* {
+    padding-top: 10px;
+} */
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+} 
+
+.play{
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 110px;
+    right: 17px;
+    opacity: var(--a);
+    transition: all ease-in-out;
+}
+
+
+/* .playbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    filter: invert(1);
+    background: #e2d9d9;
+    border-radius: 10px;
+    width: 90%;
+    padding: 12px;
+    width: 70vw;
+    min-height: 40px;
+} */
+
+.button  > *{
+margin: 0px 12px;
+}
+
+.Signupbtn{
+    background-color: rgb(34 34 34);
+    color: rgb(186, 177, 177);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+
+
+}
+.Signupbtn:hover{
+    color: white;
+    font-size: 17px;
+}
+
+.Loginbtn{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 6vw;
+    height: 5vh;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.Loginbtn:hover{
+    color: rgb(27, 26, 26);
+    font-size: 17px;
 }
