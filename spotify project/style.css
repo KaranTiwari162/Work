@@ -46,6 +46,7 @@
 }
 .right{
     margin: 16px 0;
+    position: relative;
 }
 .footer{
     display:flex;
@@ -115,14 +116,16 @@ padding: 16px;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 110px;
+    bottom: 90px;
     right: 17px;
     opacity: var(--a);
     transition: all ease-in-out;
 }
+/* .spotifyPlaylists{
+   
+} */
 
-
-/* .playbar {
+.playbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +138,7 @@ padding: 16px;
     padding: 12px;
     width: 70vw;
     min-height: 40px;
-} */
+}
 
 .button  > *{
 margin: 0px 12px;
@@ -174,4 +177,17 @@ margin: 0px 12px;
 .Loginbtn:hover{
     color: rgb(27, 26, 26);
     font-size: 17px;
+}
+
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.songlist ul {
+    padding: 0 42px;
+}
+.songlist li {
+    list-style-type: decimal;
 }
