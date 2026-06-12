@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-    <title>Spotify Sirf Gaaney Bajaaooo!!</title>
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
 </head>
 
 <body>
@@ -16,23 +15,29 @@
             <div class="close">
                 <img width="30" class="invert" src="img/close.svg" alt="">
             </div>
-            <div class="home rounded m-1 p-1  bg-grey">
-                <div class="logo"><img width="120" class="invert" src="img/logo.svg" alt=""></div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="110" class="invert" src="img/logo.svg" alt=""></div>
                 <ul>
                     <li><img class="invert" src="img/home.svg" alt="home">Home</li>
-                    <li><img class="invert" src="img/search.svg" alt="search">Search</li>
+                    <li><img class="invert" src="img/search.svg" alt="home">Search</li>
                 </ul>
             </div>
-            <div class="library rounded m-1 p-1 bg-grey">
-                <div class="heading">
-                    <img class="invert" src="img/playlist.svg" alt="playlist">
-                    <h3>Your Library</h3>
 
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
                 </div>
-                <div class="songlist">
+
+                <div class="songList">
+
                     <ul>
+
                     </ul>
                 </div>
+
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
                     <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
@@ -43,8 +48,10 @@
                     <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
                 </div>
             </div>
+
+
         </div>
-        <div class="right rounded  p-1  bg-grey">
+        <div class="right bg-grey rounded">
             <div class="header">
                 <div class="nav">
                     <div class="hamburgerContainer">
@@ -61,61 +68,51 @@
                                 stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
-                    </div>
-                <div class="button">
-                    <button class="Signupbtn">Sign Up</button>
-                    <button class="Loginbtn">Log in</button>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
                 </div>
             </div>
             <div class="spotifyPlaylists">
-                <h1>Spotify Playlist</h1>
-                <div class="cardcontainer">
-
-                    <div class="card">
-                        <div class="play">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="000"
-                                xmlns="http://www.w3.org/2000/svg">
-
-                                <path d="M5 20V4L19 12L5 20" stroke="#141B34" stroke-width="1.5"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <img src="img/IMG-20200312-WA0017(1).jpg" alt="">
-                        <h2>Happy Hits!</h2>
-                        <p>Hits to boost your mind and fill you with happiness</p>
-                    </div>
-                </div>
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">  </div>
                 <div class="playbar">
                     <div class="seekbar">
-                        <div class="circle"></div>
-                    </div>
-<div class="abovebar">
-                    <div class="songinfo">
+                        <div class="circle">
 
+                        </div>
                     </div>
+                    <div class="abovebar">
 
-                    <div class="songbuttons">
-                        <img width="35" id="previous" src="img/prevsong.svg" alt="">
+
+                        <div class="songinfo">
+
+                        </div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="img/prevsong.svg" alt="">
                             <img width="35" id="play" src="img/play.svg" alt="">
                             <img width="35" id="next" src="img/nextsong.svg" alt="">
-
-                    </div>
-
-                    <div class="timevol">
-                    <div class="songtime"></div>
-                    <div class="volume">
-                        <img width="25" src="img/volume.svg" alt="">
-                        <div class="range">
-                            <input type="range" name="volume" id="">
                         </div>
-                </div>
-            </div>
-            </div>
+                        <div class="timevol">
+
+                       
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volume">
+                            <img width="25" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

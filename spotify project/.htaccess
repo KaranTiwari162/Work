@@ -1,2 +1,2 @@
-//Options +Indexes
-//IndexOptions FancyIndexing NameWidth=* DescriptionWidth=*
+Options +Indexes
+IndexOptions FancyIndexing NameWidth=* DescriptionWidth=*
