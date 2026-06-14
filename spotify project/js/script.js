@@ -83,12 +83,15 @@ async function displayAlbums() {
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index]; 
-        if (e.href.includes("/songs/")) {
+        if (e.href.includes("/songs/")) //&& !e.href.includes(".htaccess"))
+            {
             let parts = e.href.split("/songs/")
             let folder = parts[1].replace("/", "")
         
             console.log(folder)
         
+            // Get the metadata of the folder
+
             let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json()
         
@@ -102,7 +105,7 @@ async function displayAlbums() {
         }
     }
 
-    // Load the playlist whenever card is clicked
+    // Load the playlist whenever card is clickedd
     Array.from(document.getElementsByClassName("card")).forEach(e => { 
         e.addEventListener("click", async item => {
             console.log("Fetching Songs")
